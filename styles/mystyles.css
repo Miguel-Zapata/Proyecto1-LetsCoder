@@ -1,8 +1,8 @@
         * {
             margin: 0px;
             padding: 0px;
-            color: var(--Nonegro-color)
-            /* border: 1px solid red; */
+            color: var(--Nonegro-color);
+            border: 1px solid red;
         }
         
          :root {
@@ -103,7 +103,35 @@
             justify-content: center;
             align-content: space-between;
             align-items: flex-start;
-            margin: 10px;
+        }
+        
+        section {
+            width: 50%;
+            height: 300px;
+            margin: 30px;
+            padding: 10px;
+            Text-align: center;
+            background-color: var(--Noblanco-color);
+            border: 7px solid var(--letsblue-color);
+            border-radius: 15px;
+        }
+        
+        .enviar__button {
+            width: 240px;
+            border: 3px solid var(--letsblue-color);
+            border-radius: 29px;
+            color: var(--Noblanco-color);
+            font-size: 30px;
+            font-weight: bolder;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: var(--letsblue-color);
         }
         /* INFORMACIÓN-------------------------------------------------------------------------- */
         
