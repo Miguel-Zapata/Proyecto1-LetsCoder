@@ -188,10 +188,17 @@
         
         .flex__list {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+        }
+        
+        .flex__list--daily {
+            display: flex;
+            justify-content: center;
         }
         
         .list {
+            margin-left: 50px;
+            margin-right: 50px;
             padding: 30px;
             background-color: var(--Noblanco-color);
             margin-bottom: 100px;
@@ -213,9 +220,10 @@
         }
         
         .daily {
+            width: 50%;
             padding: 30px;
             background-color: var(--Noblanco-color);
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             border: 7px solid var(--letsblue-color);
             border-radius: 15px;
             margin-top: 50px;
