@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets Coder Información</title>
+    <link href="./styles/mystyles.css" rel="stylesheet" />
+    <link rel="icon" href="./images/letscoder-icon-favicon.png" type="image/png" />
+</head>
+
+<body>
+    <header>
+        <figure class="logo">
+            <img class="borderblue logo__imagen" src="./images/letscoder-square.jpeg" alt="logo" />
+        </figure>
+
+        <div class="navegacion">
+            <nav>
+                <button class="navegacion__button zoom" onclick="location.href='home.html'">Home</button>
+                <button class="navegacion__button zoom" onclick="location.href='conocenos.html'">Conócenos</button>
+                <button class="navegacion__button zoom" onclick="location.href='info.html'">Información</button>
+                <button class="navegacion__button zoom" onclick="location.href='contacto.html'">Contacto</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="width_main">
+        <div class="info">
+            <h2 class="info__encabezado">Información</h2>
+            <p class="info__presentacion">
+                El Bootcamp no sería posible sin alumnos, así que son las verdaderas estrellas. <br/> Aquí están los mejores entre los mejores:
+            </p>
+        </div>
+
+        <div class="tabla__flex">
+            <table class="zoom shadow">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                        <th>Hobby</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+
+                    <tr>
+                        <td>Abel</td>
+                        <td>Fernandez</td>
+                        <td>35</td>
+                        <td>Madrid</td>
+                        <td>Edición de sonido</td>
+                        <td>abelfdezz@gmail.com</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>Adrian</td>
+                        <td>Vidaurre</td>
+                        <td>30</td>
+                        <td>Pamplona</td>
+                        <td>Deporte</td>
+                        <td>adrianvid16@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Javier</td>
+                        <td>Castañeda</td>
+                        <td>38</td>
+                        <td>Tenerife</td>
+                        <td>Taichí</td>
+                        <td>javiercastaneda303@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Miguel</td>
+                        <td>Zapata</td>
+                        <td>36</td>
+                        <td>Valencia</td>
+                        <td>Cómics</td>
+                        <td>miguelzapata.disten@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Noelia</td>
+                        <td>Osta</td>
+                        <td>29</td>
+                        <td>Zaragoza</td>
+                        <td>CrossFit</td>
+                        <td>noeliaosta@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="info">
+            <h3 class="info__presentacion">
+                Algunas cosas que hemos aprendido:
+            </h3>
+        </div>
+
+        <div class="flex__list">
+
+            <div class="list zoom shadow">
+                <div class="list__title">
+                    <ul>
+                        <li>
+                            <h3>HTML</h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="linea__puntos"></div>
+
+                <div class="list__subtitle">
+                    <ul class="sublist">
+                        <li>
+                            <h4>Tags</h4>
+                        </li>
+                        <ul class="sublist">
+                            <li><span class="negrita">&ltbody&gt:</span><br/> Lo que usuario puede ver.</li>
+                            <li><span class="negrita">&lthead&gt:</span><br/> Encabezado de la página.</li>
+                            <li><span class="negrita">&ltdiv&gt:</span><br/> Una división dentro de la pagina.</li>
+                            <li><span class="negrita">&ltp&gt:</span><br/> Párrafo.</li>
+                            <li><span class="negrita">&ltimg&gt:</span><br/> Imagen.</li>
+                            <li><span class="negrita">&ltbutton&gt:</span><br/> Botón.</li>
+                            <li><span class="negrita">&ltbr/&gt:</span> Salto de linea.</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="list zoom shadow">
+                <div class="list__title">
+                    <ul>
+                        <li>
+                            <h3>CSS</h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="linea__puntos"></div>
+
+                <div class="list__subtitle">
+                    <ul class="sublist">
+                        <li>
+                            <h4>Selectores</h4>
+                        </li>
+                        <ul class="sublist">
+                            <li><span class="negrita">*:</span><br/> Selecciona los elementos de la pagina.</li>
+                            <li><span class="negrita">.clase:</span><br/> Selecciona los elementos que tengan la clase "clase".</li>
+                            <li><span class="negrita">#id:</span><br/> Selecciona el elemento con la id "id".</li>
+                            <li><span class="negrita">div .clase:</span><br/> Selecciona los elementos con la clase "clase" dentro de cualquier &ltdiv&gt.</li>
+                            <li><span class="negrita">div > p:</span><br/> Selecciona todos los elementos &ltp&gt cuyo padre sea un &ltdiv&gt </li>
+                            <li><span class="negrita">.clase1.clase2:</span><br/> Selecciona los elementos con las clases "clase1" y "clase2".</li>
+                            <li><span class="negrita">p:last-child:</span><br/> Selecciona los elementos &ltp&gt que sean el último hijo.</li>
+
+                        </ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="daily">
+            <dl>
+                <dt>Daly Meeting</dt>
+                <dd class="sublist">Ponemos en comun con el mentor lo que hicimos el día anterior y lo que queremos hacer el día de hoy.</dd>
+                <dt>Timework</dt>
+                <dd class="sublist">Trabajamos en el proyecto.</dd>
+                <dt>Workshop</dt>
+                <dd class="sublist">El mentor nos da una clase teórica.</dd>
+                <dt>Brake</dt>
+                <dd class="sublist">Paramos 30m para almorzar y estirar las piernas.</dd>
+                <dt>Timework Again</dt>
+                <dd class="sublist">Trabajamos de nuevo en el proyecto.</dd>
+                <dt>Launch Brake</dt>
+                <dd class="sublist">Paramos 1h para comer.</dd>
+                <dt>Timework Once Again</dt>
+                <dd class="sublist">Continuamos trabajando en el proyecto hasta la hora de irnos.</dd>
+            </dl>
+        </div>
+
+    </main>
+</body>
+
+</html>
