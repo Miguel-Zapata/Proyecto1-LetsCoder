@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Coder Home</title>
+    <link href="./styles/mystyles.css" rel="stylesheet" />
+    <link rel="icon" href="./images/letscoder-icon-favicon.png" type="image/png" />
+</head>
+
+<body>
+    <header>
+        <figure class="logo">
+            <img class="logo__imagen" src="./images/letscoder-square.jpeg" alt="logo" />
+        </figure>
+
+        <div class="navegacion">
+            <nav>
+                <button class="navegacion__button zoom" onclick="location.href='index.html'">Home</button>
+                <button class="navegacion__button zoom" onclick="location.href='conocenos.html'">Conócenos</button>
+                <button class="navegacion__button zoom" onclick="location.href='info.html'">Información</button>
+                <button class="navegacion__button zoom" onclick="location.href='contacto.html'">Contacto</button>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main class="width_main">
+
+        <form class="form__flex">
+            <section class="section__personal">
+                <div>
+                    <h3>Información personal</h3>
+                </div>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input required type="text" name="nombre" value="" />
+                    <label for="apellido">Apellidos</label>
+                    <input required type="text" name="apellido" value="" />
+                    <label for="edad">Edad</label>
+                    <input required type="number" name="edad" value="" />
+                </div>
+
+                <div>
+                    <label for="poblacion">Población</label>
+                    <input required type="text" name="poblacion" value="" />
+                    <label for="provincia">Provincia</label>
+                    <input required type="text" name="provincia" value="" />
+                    <label for="cp">C.P</label>
+                    <input required type="number" name="cp" value="" />
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input required type="tel" name="telefono" value="" />
+                    <label for="email">email</label>
+                    <input required type="email" name="email" value="" />
+
+                </div>
+            </section>
+
+            <section class="section__curso">
+                <div>
+                    <h3>Información sobre el curso</h3>
+                </div>
+
+                <div>
+                    <p>Selecciona que tipo de Bootcamp te interesa<br/></p>
+                    <input required type="radio" name="curso" value="Full-Time" />   <label for="fulltime">Full-Time</label> <br/>
+                    <input required type="radio" name="curso" value="Part-Time" />   <label for="parttime">Part-Time</label> <br/>
+                    </p>
+                </div>
+
+                <div>
+                    <p>¿En que ciudad quieres cursar el Bootcamp?</p>
+                    <select required name="ciudad">
+                        <option value="Z">Zaragoza</option>
+                        <option value="M">Madrid</option>
+                        <option value="B">Barcelona</option>
+                        <option value="V">Valencia</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>¿Cuando te gustaría empezar?</p>
+                    <label for="date">Fecha</label>
+                    <input required type="date" name="date" value="" />
+                </div>
+
+                <div>
+                    <p>Selecciona las tecnologías que conozcas</p>
+                    <input required type="checkbox" name="html" value="" />
+                    <label for="html">HTML</label>
+                    <input required type="checkbox" name="css" value="" />
+                    <label for="css">CSS</label>
+                    <input required type="checkbox" name="jscript" value="" />
+                    <label for="jscript">JavaScript</label>
+                    <input required type="checkbox" name="git" value="" />
+                    <label for="git">Git</label>
+                    <input required type="checkbox" name="java" value="" />
+                    <label for="java">Java</label>
+                    <input required type="checkbox" name="python" value="" />
+                    <label for="python">Python</label>
+                </div>
+            </section>
+
+            <section class="section__coment">
+                <div>
+                    <h3>Comentarios</h3>
+                </div>
+
+                <div>
+                    <!-- <label for="comentarios">Deja tus comentarios</label> -->
+                    <textarea name="comentarios">Puedes dejarnos tus dudas y comentarios</textarea>
+                </div>
+
+            </section>
+        </form>
+
+    </main>
+</body>
+
+</html>

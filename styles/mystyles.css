@@ -10,7 +10,7 @@
             --Noblanco-color: #fffafa;
             --letsblue-color: rgb(1, 13, 208);
         }
-        /* PRINCIPAL--------------------------------------------------------------------------- */
+        /* GENERAL--------------------------------------------------------------------------- */
         
         body {
             background-color: rgb(187, 208, 255);
@@ -85,6 +85,25 @@
             color: rgb(1, 13, 208);
             transition: all 0.5s;
             background-color: var(--Noblanco-color);
+        }
+        /* FORMULARIO----------------------------------------------------------------------------- */
+        
+        .form__flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+            align-items: flex-start;
+            margin: 10px;
         }
         /* INFORMACIÓN-------------------------------------------------------------------------- */
         
