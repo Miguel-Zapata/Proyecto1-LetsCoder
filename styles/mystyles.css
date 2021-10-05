@@ -2,13 +2,15 @@
             margin: 0px;
             padding: 0px;
             color: var(--Nonegro-color);
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         
          :root {
             --Nonegro-color: #16161d;
             --Noblanco-color: #fffafa;
             --letsblue-color: rgb(1, 13, 208);
+            --font-main: Verdana, Geneva, Tahoma, sans-serif;
+            --font-secondary: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         }
         /* GENERAL--------------------------------------------------------------------------- */
         
@@ -97,23 +99,152 @@
             margin-top: 100px;
         }
         
-        section {
+        form section {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-content: space-between;
+            justify-content: flex-start;
+            align-content: center;
             align-items: flex-start;
         }
         
-        section {
+        form section {
             width: 50%;
             height: 300px;
             margin: 30px;
-            padding: 10px;
+            padding: 10px 0px;
             Text-align: center;
             background-color: var(--Noblanco-color);
             border: 7px solid var(--letsblue-color);
             border-radius: 15px;
+            font-family: var(--font-maina);
+        }
+        
+        .personal__title {
+            width: 100%;
+            font-family: var(--font-secondary);
+            text-align: center;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 5px 0px;
+            font-size: 30px;
+        }
+        
+        .personal__names {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            font-family: var(--font-main);
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+        }
+        
+        .personal__names--label {
+            margin: 10px;
+        }
+        
+        .personal__names--elements {
+            width: 25%;
+        }
+        
+        .personal__names--input {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .curso--title {
+            width: 100%;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            padding: 0px 0px 5px 0px;
+            font-family: var(--font-secondary);
+            font-size: 30px;
+        }
+        
+        .curso__radio--title {
+            width: 100%;
+            margin: 5px;
+            font-family: var(--font-main);
+            font-weight: bold;
+        }
+        
+        .curso__radio {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            height: 100%;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+            font-family: var(--font-main);
+        }
+        
+        .curso__radio--input {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .ciu-date {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+        }
+        
+        .ciu-date__elements {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            font-family: var(--font-main);
+        }
+        
+        .ciu-date__p {
+            margin-bottom: 10px;
+        }
+        
+        .ciu-date__input {
+            width: 45%;
+            padding: 5px;
+            font-family: var(--font-main);
+        }
+        
+        .tecnos {
+            width: 100%;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+            font-family: var(--font-main);
+        }
+        
+        .tecnos__p {
+            margin-bottom: 10px;
+        }
+        
+        .tecnos__elements {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .coment--title {
+            width: 100%;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            padding: 0px 0px 5px 0px;
+            font-family: var(--font-secondary);
+            font-size: 30px;
+        }
+        
+        .coment__box {
+            width: 95%;
+            height: 90%;
+            text-align: center;
+            margin: 5px auto 10px auto;
+        }
+        
+        .button {
+            margin-bottom: 50px;
         }
         
         .enviar__button {
@@ -126,12 +257,17 @@
             margin-left: 10px;
             margin-right: 10px;
             margin-top: 20px;
-            margin-bottom: 50px;
             padding-top: 10px;
             padding-bottom: 10px;
             padding-left: 30px;
             padding-right: 30px;
             background-color: var(--letsblue-color);
+        }
+        
+        .enviar__button:hover {
+            color: rgb(1, 13, 208);
+            transition: all 0.5s;
+            background-color: var(--Noblanco-color);
         }
         /* INFORMACIÓN-------------------------------------------------------------------------- */
         
@@ -278,20 +414,38 @@
         /* CONTACTO-------------------------------------------------------------------------------------- */
         
         .contacto {
-            /* font-size: 20px; */
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            /* margin-top: 100px; */
+            margin: 100px auto;
+            background-color: var(--Noblanco-color);
+            border: 7px solid var(--letsblue-color);
+            border-radius: 15px;
         }
         
         .contacto__encabezado {
+            width: 100%;
             font-size: 35px;
-            margin-top: 100px;
+            font-family: var(--font-secondary);
+            text-align: center;
+            padding: 20px 0px;
         }
         
-        div p.contacto__tlf {
+        .contacto__tlf {
+            width: 100%;
+            text-align: center;
+        }
+        
+        div.contacto__tlf p {
+            width: 95%;
+            margin: 20px auto;
+            font-family: var(--font-main);
             font-size: 30px;
-            margin-top: 50px;
         }
         
         div p.contacto__mail {

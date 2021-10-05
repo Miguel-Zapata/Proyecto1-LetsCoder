@@ -32,96 +32,153 @@
 
         <form class="form__flex">
             <section class="section__personal zoom shadow">
-                <div>
+
+                <div class="personal__title linea__puntos">
                     <h3>Información personal</h3>
                 </div>
 
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input required type="text" name="nombre" value="" />
-                    <label for="apellido">Apellidos</label>
-                    <input required type="text" name="apellido" value="" />
-                    <label for="edad">Edad</label>
-                    <input required type="number" name="edad" value="" />
+
+                <div class="personal__names linea__puntos">
+                    <div class="personal__names--elements">
+                        <label class="personal__names--label" for="nombre">Nombre</label><br/>
+                        <input class="personal__names--input" required id="nombre" type="text" name="nombre" value="" />
+                    </div>
+                    <div class="personal__names--elements">
+                        <label for="apellido">Apellidos</label><br/>
+                        <input class="personal__names--input" required id="apellido" type="text" name="apellido" value="" />
+                    </div>
+                    <div class="personal__names--elements">
+                        <label class="personal__names--label" for="edad">Edad</label><br/>
+                        <input class="personal__names--input" required id="edad" type="number" name="edad" value="" />
+                    </div>
                 </div>
 
-                <div>
-                    <label for="poblacion">Población</label>
-                    <input required type="text" name="poblacion" value="" />
-                    <label for="provincia">Provincia</label>
-                    <input required type="text" name="provincia" value="" />
-                    <label for="cp">C.P</label>
-                    <input required type="number" name="cp" value="" />
+                <div class="personal__names linea__puntos">
+                    <div class="personal__names--elements">
+                        <label for="poblacion">Población</label><br/>
+                        <input class="personal__names--input" required id="poblacion" type="text" name="poblacion" value="" />
+                    </div>
+                    <div class="personal__names--elements">
+                        <label for="provincia">Provincia</label><br/>
+                        <input class="personal__names--input" required id="provincia" type="text" name="provincia" value="" />
+                    </div>
+                    <div class="personal__names--elements">
+                        <label for="cp">C.P</label><br/>
+                        <input class="personal__names--input" required id="cp" type="number" name="cp" value="" />
+                    </div>
                 </div>
 
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input required type="tel" name="telefono" value="" />
-                    <label for="email">email</label>
-                    <input required type="email" name="email" value="" />
+                <div class="personal__names">
+                    <div class="personal__names--elements">
+                        <label for="telefono">Teléfono</label><br/>
+                        <input class="personal__names--input" required id="telefono" type="tel" name="telefono" value="" />
+                    </div>
 
+                    <div class="personal__names--elements">
+                        <label for="email">email</label><br/>
+                        <input class="personal__names--input" required id="email" type="email" name="email" value="" />
+                    </div>
                 </div>
+
             </section>
 
-            <section class="section__curso zoom shadow">
-                <div>
-                    <h3 class="section__curso--titulo">Información sobre el curso</h3>
+            <section class="curso zoom shadow">
+                <div class="curso--title linea__puntos">
+                    <h3>Información sobre el curso</h3>
                 </div>
 
+                <div class="curso__radio--title">
+                    <p>Selecciona que tipo de Bootcamp te interesa</p>
+                </div>
+                <div class="curso__radio linea__puntos">
+                    <div class="curso__radio--input">
+                        <input required id="fulltime" type="radio" name="curso" value="Full-Time" />   <label for="fulltime">Full-Time</label> <br/>
+                    </div>
+                    <div class="curso__radio--input">
+                        <input required id="parttime" type="radio" name="curso" value="Part-Time" />   <label for="parttime">Part-Time</label> <br/>
+                    </div>
 
-                <div>
-                    <p>Selecciona que tipo de Bootcamp te interesa<br/></p>
-                    <input required type="radio" name="curso" value="Full-Time" />   <label for="fulltime">Full-Time</label> <br/>
-                    <input required type="radio" name="curso" value="Part-Time" />   <label for="parttime">Part-Time</label> <br/>
-                    </p>
                 </div>
 
-                <div>
-                    <p>¿En que ciudad quieres cursar el Bootcamp?</p>
-                    <select required name="ciudad">
-                        <option value="Z">Zaragoza</option>
-                        <option value="M">Madrid</option>
-                        <option value="B">Barcelona</option>
-                        <option value="V">Valencia</option>
-                    </select>
+                <div class="ciu-date linea__puntos">
+                    <div class="ciu-date__elements">
+                        <div>
+                            <p class="ciu-date__p negrita">¿En que ciudad quieres cursar el Bootcamp?</p>
+                        </div>
+                        <div>
+                            <select class="ciu-date__input" required name="ciudad">
+                        <option value="">Zaragoza</option>
+                        <option value="">Madrid</option>
+                        <option value="">Barcelona</option>
+                        <option value="">Valencia</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="ciu-date__elements">
+                        <div>
+                            <p class="ciu-date__p negrita">¿Cuando te gustaría empezar?</p>
+                        </div>
+                        <div>
+                            <label for="date"></label>
+                            <input class="ciu-date__input" required id="date" type="date" name="date" value="" />
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <p>¿Cuando te gustaría empezar?</p>
-                    <label for="date">Fecha</label>
-                    <input required type="date" name="date" value="" />
-                </div>
+                <div class="tecnos">
+                    <div>
+                        <p class="tecnos__p negrita">Selecciona las tecnologías que conozcas</p>
+                    </div>
+                    <div class="tecnos__elements">
 
-                <div>
-                    <p>Selecciona las tecnologías que conozcas</p>
-                    <input required type="checkbox" name="html" value="" />
-                    <label for="html">HTML</label>
-                    <input required type="checkbox" name="css" value="" />
-                    <label for="css">CSS</label>
-                    <input required type="checkbox" name="jscript" value="" />
-                    <label for="jscript">JavaScript</label>
-                    <input required type="checkbox" name="git" value="" />
-                    <label for="git">Git</label>
-                    <input required type="checkbox" name="java" value="" />
-                    <label for="java">Java</label>
-                    <input required type="checkbox" name="python" value="" />
-                    <label for="python">Python</label>
+                        <div>
+                            <input required id="html" type="checkbox" name="html" value="" />
+                            <label for="html">HTML</label>
+                        </div>
+
+                        <div>
+                            <input required id="css" type="checkbox" name="css" value="" />
+                            <label for="css">CSS</label>
+                        </div>
+
+                        <div>
+                            <input required id="jscript" type="checkbox" name="jscript" value="" />
+                            <label for="jscript">JavaScript</label>
+                        </div>
+
+                        <div>
+                            <input required id="git" type="checkbox" name="git" value="" />
+                            <label for="git">Git</label>
+                        </div>
+
+                        <div>
+                            <input required id="java" type="checkbox" name="java" value="" />
+                            <label for="java">Java</label>
+                        </div>
+
+                        <div>
+                            <input required id="python" type="checkbox" name="python" value="" />
+                            <label for="python">Python</label>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
             <section class="section__coment zoom shadow">
-                <div>
+                <div class="coment--title linea__puntos">
                     <h3>Comentarios</h3>
                 </div>
 
-                <div>
-                    <textarea name="comentarios">Puedes dejarnos tus dudas y comentarios</textarea>
+                <div class="coment__box">
+                    <textarea class="coment__box" name="comentarios">Puedes dejarnos tus dudas y comentarios</textarea>
                 </div>
 
             </section>
 
-            <div>
-                <button class="enviar__button zoom">Enviar</button>
+            <div class="button">
+                <input class="enviar__button zoom" type="submit" value="Enviar" />
             </div>
         </form>
 
