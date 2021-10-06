@@ -7,7 +7,7 @@
         
          :root {
             --Nonegro-color: #16161d;
-            --Noblanco-color: #fffafa;
+            --Noblanco-color: rgb(255, 250, 250);
             --letsblue-color: rgb(1, 13, 208);
             --font-main: Verdana, Geneva, Tahoma, sans-serif;
             --font-secondary: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -25,6 +25,14 @@
         
         .negrita {
             font-weight: bolder;
+        }
+        
+        .font-verd {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .font-30 {
+            font-size: 30px;
         }
         /* EFECTOS-------------------------------------------------------------------------------- */
         
@@ -63,23 +71,14 @@
             margin-top: 50px;
         }
         
-        .navegacion__button {
+        nav button {
             width: 240px;
             border: 3px solid var(--letsblue-color);
             border-radius: 29px;
-        }
-        
-        nav button {
             color: var(--Noblanco-color);
-            font-size: 30px;
             font-weight: bolder;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 30px;
-            padding-right: 30px;
+            margin: 20px 10px 0px 10px;
+            padding: 10px 30px;
             background-color: var(--letsblue-color);
         }
         
@@ -88,199 +87,129 @@
             transition: all 0.5s;
             background-color: var(--Noblanco-color);
         }
-        /* FORMULARIO----------------------------------------------------------------------------- */
+        /* HOME-------------------------------------------------------------------------------------------------- */
         
-        .form__flex {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
+        .home__encabezado {
+            text-align: center;
+            font-size: 25px;
             margin-top: 100px;
         }
         
-        form section {
+        .tarjetas__box {
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-content: center;
-            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            margin: auto;
         }
         
-        form section {
-            width: 50%;
-            height: 300px;
-            margin: 30px;
-            padding: 10px 0px;
-            Text-align: center;
+        .tarjeta {
+            height: 500px;
+            width: 350px;
             background-color: var(--Noblanco-color);
             border: 7px solid var(--letsblue-color);
             border-radius: 15px;
-            font-family: var(--font-maina);
+            margin: 50px 0px 100px 0px;
         }
         
-        .personal__title {
-            width: 100%;
-            font-family: var(--font-secondary);
+        .tarjeta__fecha {
+            font-size: 130px;
             text-align: center;
-            margin: 10px auto 0px auto;
-            padding: 0px 0px 5px 0px;
-            font-size: 30px;
-        }
-        
-        .personal__names {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-content: center;
-            font-family: var(--font-main);
-            margin: 10px auto 0px auto;
-            padding: 0px 0px 10px 0px;
-        }
-        
-        .personal__names--label {
-            margin: 10px;
-        }
-        
-        .personal__names--elements {
-            width: 25%;
-        }
-        
-        .personal__names--input {
-            width: 100%;
-            padding: 5px;
-        }
-        
-        .curso--title {
-            width: 100%;
-            text-align: center;
-            margin: 10px auto 10px auto;
-            padding: 0px 0px 5px 0px;
             font-family: var(--font-secondary);
-            font-size: 30px;
+            margin: 15px 0px;
         }
         
-        .curso__radio--title {
-            width: 100%;
-            margin: 5px;
-            font-family: var(--font-main);
-            font-weight: bold;
+        .linea__puntos {
+            border-bottom: 5px dotted var(--letsblue-color);
         }
         
-        .curso__radio {
+        .tarjeta__dia {
+            text-align: center;
+            font-size: 40px;
+            margin: 15px 0px;
+        }
+        
+        .punto {
+            font-size: 35px;
+        }
+        
+        .tarjeta__curso {
+            text-align: center;
+            line-height: 40px;
+            margin: 15px 0px;
+        }
+        
+        .tarjeta__button {
             display: flex;
+            flex-direction: row;
             justify-content: center;
-            align-content: center;
-            width: 100%;
-            height: 100%;
-            margin: 10px auto 0px auto;
-            padding: 0px 0px 10px 0px;
-            font-family: var(--font-main);
+            align-items: center;
+            margin: 25px;
         }
         
-        .curso__radio--input {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        
-        .ciu-date {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin: 10px auto 0px auto;
-            padding: 0px 0px 10px 0px;
-        }
-        
-        .ciu-date__elements {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-content: flex-start;
-            font-family: var(--font-main);
-        }
-        
-        .ciu-date__p {
-            margin-bottom: 10px;
-        }
-        
-        .ciu-date__input {
-            width: 45%;
-            padding: 5px;
-            font-family: var(--font-main);
-        }
-        
-        .tecnos {
-            width: 100%;
-            margin: 10px auto 0px auto;
-            padding: 0px 0px 10px 0px;
-            font-family: var(--font-main);
-        }
-        
-        .tecnos__p {
-            margin-bottom: 10px;
-        }
-        
-        .tecnos__elements {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        .coment--title {
-            width: 100%;
-            text-align: center;
-            margin: 10px auto 10px auto;
-            padding: 0px 0px 5px 0px;
-            font-family: var(--font-secondary);
-            font-size: 30px;
-        }
-        
-        .coment__box {
-            width: 95%;
-            height: 90%;
-            text-align: center;
-            margin: 5px auto 10px auto;
-        }
-        
-        .button {
-            margin-bottom: 50px;
-        }
-        
-        .enviar__button {
-            width: 240px;
-            border: 3px solid var(--letsblue-color);
-            border-radius: 29px;
+        div.tarjeta__button button {
             color: var(--Noblanco-color);
-            font-size: 30px;
             font-weight: bolder;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding: 10px 30px;
             background-color: var(--letsblue-color);
+            border-radius: 29px;
+            border: 3px solid var(--letsblue-color);
         }
         
-        .enviar__button:hover {
-            color: rgb(1, 13, 208);
+        div.tarjeta__button button:hover {
+            color: var(--letsblue-color);
             transition: all 0.5s;
             background-color: var(--Noblanco-color);
+        }
+        /* CONOCENOS-------------------------------------------------------------------------------------- */
+        
+        .conocenos {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 100px;
+        }
+        
+        .conocenos__presentacion {
+            margin-top: 50px;
+        }
+        
+        .mentores {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            margin: 100px 0px;
+        }
+        
+        .mentor__imagen {
+            width: 400px;
+            height: 400px;
+            border: 7px solid var(--letsblue-color);
+            border-radius: 15px;
+        }
+        
+        .mentor__texto {
+            font-family: sans-serif;
+            margin: 0px 50px;
+        }
+        
+        .mentor__texto--nombre {
+            font-size: 40px;
+        }
+        
+        .mentor__texto--descripcion {
+            margin-top: 40px;
         }
         /* INFORMACIÓN-------------------------------------------------------------------------- */
         
         .info {
             text-align: center;
             font-size: 25px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin-top: 100px;
         }
         
         .info__presentacion {
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin: 50px 0px;
         }
         
         .tabla__flex {
@@ -300,20 +229,14 @@
         td {
             background-color: var(--Noblanco-color);
             padding: 10px;
-            /* border-radius: 30px; */
-            /* border-bottom: 5px dotted var(--letsblue-color); */
         }
         
         th {
             padding: 10px;
             font-size: 25px;
-            /* border-radius: 30px; */
-            /* border-bottom: 5px dotted var(--letsblue-color); */
-            /* border-radius: 15px 15px 0px 0px; */
         }
         
         table {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 20px;
             text-align: center;
             width: 95%;
@@ -349,24 +272,8 @@
             transition: all 0.5s;
         }
         
-        .info__listas {
-            text-align: center;
-            font-size: 25px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        
-        ul {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        
-        dl {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        
-        dt {
-            font-weight: bold;
+        dd {
+            padding-bottom: 20px;
         }
         
         .flex__list {
@@ -380,14 +287,13 @@
         }
         
         .list {
-            margin-left: 50px;
-            margin-right: 50px;
+            width: 30%;
+            height: auto;
+            margin: 50px 50px 0px 50px;
             padding: 30px 0px;
             background-color: var(--Noblanco-color);
-            margin-bottom: 100px;
             border: 7px solid var(--letsblue-color);
             border-radius: 15px;
-            margin-top: 50px;
         }
         
         .list__title {
@@ -396,26 +302,32 @@
             text-align: center;
         }
         
-        div.list__title h3 {
-            font-size: 30px;
-        }
-        
         .list__subtitle {
             margin-top: 30px;
         }
         
         .sublist {
+            padding-right: 10px;
             margin: 0px 0px 0px 30px;
+        }
+        
+        .list_style {
+            list-style-type: none;
+            padding: 0px;
+            /*<<<NO TOCAR padding 0px*/
+        }
+        
+        ul li {
+            padding-bottom: 20px;
         }
         
         .daily {
             width: 50%;
             padding: 30px;
             background-color: var(--Noblanco-color);
-            margin-bottom: 50px;
+            margin: 50px 0px;
             border: 7px solid var(--letsblue-color);
             border-radius: 15px;
-            margin-top: 50px;
         }
         /* CONTACTO-------------------------------------------------------------------------------------- */
         
@@ -427,7 +339,6 @@
             align-content: center;
             align-items: center;
             text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 100px auto;
             background-color: var(--Noblanco-color);
             border: 7px solid var(--letsblue-color);
@@ -451,143 +362,188 @@
             width: 95%;
             margin: 20px auto;
             font-family: var(--font-main);
-            font-size: 30px;
         }
         
         div p.contacto__mail {
-            font-size: 30px;
-            margin-top: 30px;
-            margin-bottom: 50px;
-        }
-        /* CONOCENOS-------------------------------------------------------------------------------------- */
-        
-        .conocenos {
-            text-align: center;
-            font-size: 25px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin-top: 100px;
+            margin: 30px 0px 50px 0px;
         }
         
-        .conocenos__presentacion {
-            margin-top: 50px;
-        }
-        
-        .mentores {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: stretch;
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-        
-        .mentor__imagen {
-            width: 400px;
-            height: 400px;
-            border: 7px solid var(--letsblue-color);
-            border-radius: 15px;
-        }
-        
-        .mentor__texto {
-            font-family: sans-serif;
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-        
-        .mentor__texto--nombre {
-            font-size: 40px;
-        }
-        
-        .mentor__texto--descripcion {
-            font-size: 30px;
-            margin-top: 40px;
-        }
-        /* HOME-------------------------------------------------------------------------------------------------- */
-        
-        .home__encabezado {
-            text-align: center;
-            font-size: 25px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin-top: 100px;
-        }
-        
-        .tarjetas__box {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: stretch;
-            margin: auto;
-        }
-        
-        .tarjeta {
-            height: 500px;
-            width: 350px;
-            background-color: var(--Noblanco-color);
-            margin-bottom: 100px;
-            border: 7px solid var(--letsblue-color);
-            border-radius: 15px;
-            margin-top: 50px;
-        }
-        
-        .tarjeta__fecha {
-            font-size: 130px;
-            text-align: center;
-            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            /* border-bottom: 5px dotted rgb(1, 13, 208); */
-        }
-        
-        .linea__puntos {
-            border-bottom: 5px dotted var(--letsblue-color);
-        }
-        
-        .tarjeta__dia {
-            text-align: center;
-            font-size: 40px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            /* border-bottom: 5px dotted rgb(1, 13, 208); */
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .punto {
+        .size--icon {
+            color: var(--letsblue-color);
             font-size: 35px;
         }
+        /* FORMULARIO----------------------------------------------------------------------------- */
         
-        .tarjeta__curso {
-            font-size: 30px;
-            text-align: center;
-            line-height: 40px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            /* border-bottom: 5px dotted rgb(1, 13, 208); */
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .tarjeta__button {
+        .form__flex {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
+            align-content: center;
             align-items: center;
-            margin: 25px 25px;
+            margin-top: 100px;
         }
         
-        div.tarjeta__button button {
-            color: var(--Noblanco-color);
-            font-size: 30px;
-            font-weight: bolder;
+        form section {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: flex-start;
+        }
+        
+        form section {
+            width: 50%;
+            height: auto;
+            margin: 30px;
+            padding: 10px 0px;
+            Text-align: center;
+            background-color: var(--Noblanco-color);
+            border: 7px solid var(--letsblue-color);
+            border-radius: 15px;
+            font-family: var(--font-maina);
+        }
+        
+        .personal__title {
+            width: 100%;
+            font-family: var(--font-secondary);
+            text-align: center;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+        }
+        
+        .personal__names {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            font-family: var(--font-main);
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+        }
+        
+        .personal__names--label {
+            margin: 10px;
+        }
+        
+        .personal__names--elements {
+            padding: 10px 0px 10px 0px;
+            width: 25%;
+        }
+        
+        .personal__names--input {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .curso--title {
+            width: 100%;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            padding: 0px 0px 10px 0px;
+            font-family: var(--font-secondary);
+        }
+        
+        .curso__radio--title {
+            width: 100%;
+            margin: 5px;
+            font-family: var(--font-main);
+        }
+        
+        .curso__radio {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            height: 100%;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+            font-family: var(--font-main);
+        }
+        
+        .curso__radio--input {
+            margin: 0px 20px;
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .ciu-date {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+        }
+        
+        .ciu-date__elements {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            font-family: var(--font-main);
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .ciu-date__p {
+            margin-bottom: 10px;
+        }
+        
+        .ciu-date__input {
+            width: 45%;
+            padding: 5px;
+            font-family: var(--font-main);
+        }
+        
+        .tecnos {
+            width: 100%;
+            margin: 10px auto 0px auto;
+            padding: 0px 0px 10px 0px;
+            font-family: var(--font-main);
+        }
+        
+        .tecnos__p {
+            margin-bottom: 10px;
             padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 30px;
-            padding-right: 30px;
-            background-color: var(--letsblue-color);
-            border-radius: 29px;
-            border: 3px solid var(--letsblue-color);
         }
         
-        div.tarjeta__button button:hover {
-            color: var(--letsblue-color);
+        .tecnos__elements {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .coment--title {
+            width: 100%;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            padding: 0px 0px 10px 0px;
+            font-family: var(--font-secondary);
+        }
+        
+        .coment__box {
+            width: 95%;
+            height: 95%;
+            text-align: center;
+            margin: 5px auto 10px auto;
+        }
+        
+        .button {
+            margin-bottom: 50px;
+        }
+        
+        .enviar__button {
+            width: 240px;
+            border: 3px solid var(--letsblue-color);
+            border-radius: 29px;
+            color: var(--Noblanco-color);
+            font-weight: bolder;
+            margin: 20px 10px 0px 10px;
+            padding: 10px 30px;
+            background-color: var(--letsblue-color);
+        }
+        
+        .enviar__button:hover {
+            color: rgb(1, 13, 208);
             transition: all 0.5s;
             background-color: var(--Noblanco-color);
         }
