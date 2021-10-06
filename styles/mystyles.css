@@ -87,6 +87,12 @@
             transition: all 0.5s;
             background-color: var(--Noblanco-color);
         }
+        
+        .boton2 {
+            color: rgb(1, 13, 208);
+            transition: all 0.5s;
+            background-color: var(--Noblanco-color);
+        }
         /* HOME-------------------------------------------------------------------------------------------------- */
         
         .home__encabezado {
