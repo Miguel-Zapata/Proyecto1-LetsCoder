@@ -27,7 +27,7 @@ Proyecto inicial del Bootcamp Let's Coder, donde se aprenden las nociones básic
 
 - ### **Epic 2: Formulario de inscripción.**
     - **Story 1:** Crear un formulario en un nuevo archivo HTML al que se acceda pulsando los botones de [Inscribirme] que hay en home.html.
-    ***
+***
 ## **Herramientas utilizadas.**
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Git Bash](https://gitforwindows.org/)
